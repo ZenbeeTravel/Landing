@@ -1,0 +1,234 @@
+hr.hr-divider{
+	width: 100px;
+	height: 1px;
+	margin: -0.5em auto;
+	padding: 0;
+	border: 0;
+  clear: both;
+}
+
+.card-heading p {
+  display: inline-block;
+}
+  
+.card-heading .icon-holder {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn.round-edges,
+.btn-large.round-edges {
+	border-radius: 20px;
+}
+
+div.pictogrammes div p {
+	margin-top: 0;
+}
+
+div#discover div.section div.pictogrammes div p {
+	font-size: 20px;
+}
+
+.baseline {
+	margin-top: 15vh;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.under-baseline {
+  font-size: 20px;
+  text-shadow: 1px 1px 5px black;
+}
+
+#get-started{
+	min-height: 100vh;
+}
+
+#download-button {
+	margin-top: 10vh;
+}
+
+span.caret {
+  color: white !important; 
+}
+
+
+/*===================================Radio==================================*/
+.radio-toolbar p{
+	display: inline-block;
+	margin-right: 10px;
+}
+.radio-toolbar input[type="radio"] {
+	display: none;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  background-color: #fff3e0;
+  padding: 4px 11px;
+  margin-top: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+  background-color: #ff9100;
+  color: black;
+}
+
+/*==================================Star-choice==========================*/
+
+.star-choice {
+	margin-top: 10px;
+}
+
+.rating {
+  overflow: hidden;
+  vertical-align: bottom;
+  display: inline-block;
+  width: auto;
+  height: 25px;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label {
+  position: relative;
+  display: block;
+  float: right;
+  background: url('../assets/star-rating.png');
+  background-size: 25px 25px;
+}
+
+.rating > label:before {
+  display: block;
+  opacity: 0;
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url('../assets/star-rating-check.png');
+  background-size: 25px 25px;
+  transition: opacity 0.2s linear;
+}
+
+.rating > label:hover:before,  .rating > label:hover ~ label:before,  .rating:not(:hover) > :checked ~ label:before { opacity: 1; }
+
+@media only screen and (max-width: 600px) 
+{
+	.star-section {
+		margin-bottom: 0px;
+	}
+}
+
+
+
+
+
+/*===============================Responsive alignment==============================*/
+
+
+.l-center-align
+{
+    text-align: center;
+}
+
+.l-left-align
+{
+    text-align: left;
+}
+
+.l-right-align
+{
+    text-align: right;
+}
+
+@media only screen and (max-width : 992px) 
+{
+    .m-center-align
+    {
+        text-align: center;
+    }
+
+    .m-left-align
+    {
+        text-align: left;
+    }
+
+    .m-right-align
+    {
+        text-align: right;
+    }
+}
+
+@media only screen and (max-width : 600px) 
+{
+    .s-center-align
+    {
+        text-align: center;
+    }
+
+    .s-left-align
+    {
+        text-align: left;
+    }
+
+    .s-right-align
+    {
+        text-align: right;
+    }
+}
+
+
+
+/*===============================Section Destinations==========================*/
+div#destinations #destinations-title {
+  padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+div#destinations .row/*
+div#destinations .row .card,
+div#destinations .row .card .card-image */{
+	margin-bottom: 0;
+	margin-top: 0;
+	
+}
+
+@media only screen and (min-width: 600px ) {
+
+  div#destinations .row .card-title {
+    font-size: 36px;
+  }
+}
+
+div#destinations .row .card-title {
+  text-shadow: 3px 3px 8px black;
+}
+
+
+/*===============================page success.html================================*/
+
+
+#grad {
+  background: #ffa726; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ffa726 , #ef6c00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ffa726, #ef6c00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ffa726, #ef6c00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffa726 , #ef6c00); /* Standard syntax */
+  height: 100vh;
+}
+
+div.success_wrap {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 992px){
+  div.success_wrap {
+    height: 100%;
+  }
+}
+

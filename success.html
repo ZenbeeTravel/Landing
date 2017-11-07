@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta httpbutto-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Zenbee - A revolutionary travel assistant</title>
+  	<link rel="icon" type="image/png" href="assets/favicon2.png">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+ 	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108294785-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108294785-1');
+  </script>
+</head>
+<body id="grad">
+	<div class="container" >
+		<div class="valign-wrapper success_wrap"  >
+			<div class="row center">
+			<div class="col m12 l6">
+				<h5 class="section white-text">Thank you for your interest in Zenbee travel assistant!<br/>We are not fully ready yet.</h4>
+				<p>To be part of our beta-testers and know more about the evolution of the project, leave us your e-mail address : )</p>
+				<form class="center" action="email.php" method="post">
+					<div class="input-field col s12">
+              			<input id="email" type="email" class="validate" name="email" required>
+             			 <label for="email" data-error="Invalid email">Email</label>
+            		</div>
+            		<div class="col s12 center" style="margin-bottom: 20px;">
+            			<button class="btn-large waves-effect waves-orange white round-edges hoverable orange-text darken-3" type="submit" name="action">Submit
+              			<i class="material-icons right">send</i>
+            			</button>
+          			</div>
+				</form>
+				<a href="index.html" class="btn-large wave-effect wave-orange white orange-text round-edges hoverable"><i class="material-icons left">arrow_back</i> Back</a>
+			</div>
+			<div class="col m12 l6">
+				<img src="assets/phone.png" class="responsive-img" style="margin-top: 20px;">
+			</div>
+		</div>
+		</div>
+	</div>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script>
+  	(function($){
+  $(function(){
+  	var themeColor ;
+
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    themeColor = localStorage.getItem("themeColor");
+   if(themeColor == undefined)
+   {localStorage.setItem("themeColor", "blue");
+    themeColor = 'blue';
+    } 
+  
+} else {
+  Materialize.toast("Sorry, your browser does not support Web Storage...", 4000) 
+}
+
+      $(".nav-wrapper").css("background-color", themeColor);
+      $(".secondary-content>.material-icons").css("color", themeColor);
+      $(".btn").css("background-color", themeColor);
+      $(".page-footer").css("background-color",themeColor);
+      $(".input-field").css("color", themeColor);
+      $(".input-field>.material-icons").css("color", themeColor);
+      $(".input-field>label").css("color",themeColor);
+      $(".dropdown-content>li>a").css("color", themeColor);
+
+            var themeColor = '#ffffff';
+      $(".nav-wrapper").css("background-color", themeColor);
+      $(".secondary-content>.material-icons").css("color", themeColor);
+      $(".btn").css("background-color", themeColor);
+      $(".page-footer").css("background-color", themeColor);
+      $(".input-field").css("color", themeColor);
+      $(".input-field>.material-icons").css("color", themeColor);
+      $(".input-field>label").css("color", themeColor);
+      $(".btn-floating").css("background-color", themeColor);
+      $(".dropdown-content>li>a").css("color", themeColor);
+      
+      // Update Theme Color
+       if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("themeColor", themeColor);
+
+       } else {
+      Materialize.toast("Sorry, your browser does not support Web Storage...", 4000) 
+       }
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
+  </script>
+
+</body>
+</html>

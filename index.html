@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta httpbutto-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Zenbee - A revolutionary travel assistant</title>
+  <link rel="icon" type="image/png" href="assets/favicon2.png">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108294785-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108294785-1');
+  </script>
+
+</head>
+<body>
+
+  <div class="parallax-container" id="main-parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+        	<div class="col s6 offset-s3">
+        		<img src="assets/logo-zenbee-blc.png" class="responsive-img">
+          </div>
+          <div class="col s12">
+            <h5 class="header white-text baseline">GET THE MOST OUT OF YOUR TRIP</h5>
+            <p class="white-text under-baseline">The best route every day based on what you want and local data in 20+ capital cities</p>
+        	</div>
+        </div>
+        <div class="row center">
+          <a href="#discover" id="download-button" class="btn-large waves-effect waves-light orange darken-3 round-edges">discover</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/milan-chudoba-recut.jpg" alt="Photo by Milan Chudoba on Unsplashed"></div>
+  </div>
+
+
+
+  <div class="container scrollspy" id="discover">
+    <div class="section">
+      <div class="row center">
+        <h4 class="col s12 light">A revolutionary travel assistant</h4>
+        <hr class="hr-divider black black-text">
+      </div>
+
+      <div class="row center pictogrammes">
+        <div class="col s12 m6">
+          <img src="assets/chrono-150x150.png">
+          <p class="orange-text text-darken-3">Optimize your sightseeing<br>in seconds</p>
+        </div>
+        <div class="col s12 m6">
+          <img src="assets/weather-150x150.png">
+          <p class="orange-text text-darken-3">Adjust your activities<br>to the weather</p>
+        </div>
+      </div>
+
+      <div class="row center pictogrammes">
+        <div class="col s12 m6">
+          <img src="assets/queue-150x150.png">
+          <p class="orange-text text-darken-3">Access monuments when<br>queue is at its minimum</p>
+        </div>
+        <div class="col s12 m6">
+          <img src="assets/couverts-150x150.png">
+          <p class="orange-text text-darken-3">Experience only true local<br>restaurants & bars</p>
+        </div>
+      </div>
+
+      <div class="row center">
+          <a href="#get-started" class="btn-large orange darken-3 white-text waves-effect waves-light round-edges">TRY IT NOW</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section" id="destinations">
+    <div class="row center grey darken-4" id="destinations-title">
+      <h4 class="col s12 light  white-text">Trendy destinations</h4>
+      <hr class="hr-divider white white-text">
+    </div>
+
+    <div class="row">
+      <div class="card col s12 m6">
+        <div class="card-image">
+          <img src="assets/trendy1.png" alt="">
+          <span class="card-title">Paris</span>
+        </div>
+      </div>
+      <div class="card col s12 m6">
+        <div class="card-image">
+          <img src="assets/trendy2.jpg" alt="">
+          <span class="card-title">Barcelona</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card col s12 m6">
+        <div class="card-image">
+          <img src="assets/trendy3.jpg">
+          <span class="card-title">London</span>
+        </div>
+      </div>
+
+      <div class="card col s12 m6">
+        <div class="card-image">
+          <img src="assets/trendy4.jpg">
+          <span class="card-title">Venice</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="scrollspy grey darken-4 white-text" id="get-started">
+    <div class="container">
+    <div class="section">
+      <div class="row center">
+        <h4 class="col s12 light">Create your trip in a few seconds</h4>
+        <hr class="hr-divider white white-text" />
+      </div>
+
+        <form class="center" action="form.php" method="post">
+          <div class="row">
+          <div class="input-field col s10 offset-s1 m6">
+            <select class="validate">
+              <option value="default" selected>Where are we going?</option>
+              <option value="Amsterdam">Amsterdam</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Berlin">Berlin</option>
+              <option value="Florence">Florence</option>
+              <option value="London">London</option>
+              <option value="Madrid">Madrid</option>
+              <option value="Paris" >Paris</option>
+              <option value="Prague">Prague</option>
+              <option value="Rome">Rome</option>
+              <option value="Venice">Venice</option>
+              <option value="Vienna">Vienna</option>
+            </select>
+            <label></label>
+          </div>
+          <div class="input-field col s6 m3" >
+            <label for="start">Start</label>
+            <input type="text" class="datepicker" name="start" required>
+          </div>
+
+          <div class="input-field col s6 m3" >
+            <label for="end">End</label>
+            <input type="text" class="datepicker" name="end" required>
+          </div>
+          </div>
+
+          <div class="row">
+
+          <div class="col l12 m12 radio-toolbar ">
+            <div class="row">
+              <div class="col s12 m6 s-center-align m-right-align l-right-align ">
+                <p>Travelers: </p>
+              </div>
+
+              <div class="col s12 m6 s-center-align m-left-align l-left-align">
+                <input type="radio" name="travelers" id="couple" value="couple" checked/>
+                <label for="couple" class="waves-effect waves-light">Couple</label>
+
+                <input type="radio" name="travelers" id="family" value="family" />
+                <label for="family" class="waves-effect waves-light">Family</label>
+
+                <input type="radio" name="travelers" id="friends" value="friends" />
+                <label for="friends" class="waves-effect waves-light">Friends</label>
+
+                <input type="radio" name="travelers" id="solo" value="solo" />
+                <label for="solo" class="waves-effect waves-light">Solo</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="col l12 m12 radio-toolbar">
+            <div class="row">
+              <div class="col s12 m6 s-center-align m-right-align l-right-align ">
+                <p>I have been there: </p>
+              </div>
+              
+
+              <div class="col s12 m6 s-center-align m-left-align l-left-align">
+                <input type="radio" name="know-city" id="never" value="never" checked />
+                <label for="never" class="waves-effect waves-light">Never!</label>
+
+                <input type="radio" name="know-city" id="first" value="first" />
+                <label for="first" class="waves-effect waves-light">Once</label>
+
+                <input type="radio" name="know-city" id="second" value="second"/>
+                <label for="second" class="waves-effect waves-light">Twice</label>
+
+                <input type="radio" name="know-city" id="third" value="third"/>
+                <label for="third" class="waves-effect waves-light">3+ times</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-bottom: 0;">
+          <div class="col s12 center">
+            <h5>Activity preferences</h5>
+          </div>
+          </div>
+
+          <div class="row star-section">
+           <div class="col s6 m3">
+              <p class="right-align">Museums :  </p>
+            </div>
+            <div class="col s6 m3 left-align star-choice">
+            <span class="rating">
+              <input id="museum3" type="radio" name="museum" value="3">
+              <label for="museum3">3</label>
+              <input id="museum2" type="radio" name="museum" value="2">
+              <label for="museum2">2</label>
+              <input id="museum1" type="radio" name="museum" value="1">
+              <label for="museum1">1</label>
+              <input id="museum0" type="radio" name="museum" value="0" checked>
+              <label for="museum0" class="hide">0</label>
+            </span>
+            </div>
+
+           <div class="col s6 m3">
+              <p class="right-align">Historic Sites :  </p>
+            </div>
+            <div class="col s6 m3 left-align star-choice">
+            <span class="rating">
+              <input id="shopping3" type="radio" name="historic" value="3">
+              <label for="shopping3">3</label>
+              <input id="shopping2" type="radio" name="historic" value="2">
+              <label for="shopping2">2</label>
+              <input id="shopping1" type="radio" name="historic" value="1">
+              <label for="shopping1">1</label>
+              <input id="shopping0" type="radio" name="historic" value="0" checked>
+              <label for="shopping0" class="hide">0</label>
+            </span>
+            </div>
+          </div>
+
+          <div class="row star-section">
+           <div class="col s6 m3">
+              <p class="right-align">Good Food :  </p>
+            </div>
+            <div class="col s6 m3 left-align star-choice">
+            <span class="rating">
+              <input id="food3" type="radio" name="food" value="3">
+              <label for="food3">3</label>
+              <input id="food2" type="radio" name="food" value="2">
+              <label for="food2">2</label>
+              <input id="food1" type="radio" name="food" value="1">
+              <label for="food1">1</label>
+              <input id="food0" type="radio" name="food" value="0" checked>
+              <label for="food0" class="hide">0</label>
+            </span>
+            </div>
+
+           <div class="col s6 m3">
+              <p class="right-align">Shopping :  </p>
+            </div>
+            <div class="col s6 m3 left-align star-choice">
+            <span class="rating">
+              <input id="sites3" type="radio" name="shopping" value="3">
+              <label for="sites3">3</label>
+              <input id="sites2" type="radio" name="shopping" value="2">
+              <label for="sites2">2</label>
+              <input id="sites1" type="radio" name="shopping" value="1">
+              <label for="sites1">1</label>
+              <input id="sites0" type="radio" name="shopping" value="0" checked>
+              <label for="sites0" class="hide">0</label>
+            </span>
+            </div>
+          </div>
+
+          <div class="row">
+           <div class="col s6 m3 ">
+              <p class="right-align">Night Life :  </p>
+            </div>
+            <div class="col s6 m3 left-align star-choice">
+            <span class="rating">
+              <input id="night3" type="radio" name="night" value="3">
+              <label for="night3">3</label>
+              <input id="night2" type="radio" name="night" value="2">
+              <label for="night2">2</label>
+              <input id="night1" type="radio" name="night" value="1">
+              <label for="night1">1</label>
+              <input id="night0" type="radio" name="night" value="0" checked>
+              <label for="night0" class="hide">0</label>
+            </span>
+            </div>
+
+          </div>
+          
+          <div class="row center">
+            <button class="btn waves-effect waves-light round-edges" type="submit" name="action">Show me
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+      </form>
+        
+    </div>
+  </div>
+</div>
+
+  <div class="divider">
+  </div>
+  <footer class="footer-page center">
+  	<div class="card-heading grey darken-3 grey-text text-light-2">
+  		<div class="icon-holder">
+		    <i class="material-icons">copyright</i>
+  		</div>
+	 		<p> 2017 Zenbee, all rights reserved.</p>
+		</div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+</html>

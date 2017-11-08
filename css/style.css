@@ -31,8 +31,14 @@ div#discover div.section div.pictogrammes div p {
 
 .baseline {
 	margin-top: 15vh;
-  font-size: 30px;
+  font-size: 3.5em;
   text-shadow: 2px 2px 2px black;
+}
+
+@media only screen and (max-width: 600px) {
+  .baseline {
+    font-size: 2em;
+  }
 }
 
 .under-baseline {
@@ -45,13 +51,33 @@ div#discover div.section div.pictogrammes div p {
 }
 
 #download-button {
-	margin-top: 10vh;
+	margin-top: 20vh;
 }
 
 span.caret {
   color: white !important; 
 }
 
+#main-container {
+  height: 100vh;
+  background-image: url('../assets/camila-cordeiro.jpg'); 
+  background-size: auto 100% ;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #main-container {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 992px)
+{
+  #main-logo {
+    max-width: 10vw;
+  }
+}
 
 /*===================================Radio==================================*/
 .radio-toolbar p{

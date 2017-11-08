@@ -40,8 +40,10 @@ if (typeof(Storage) !== "undefined") {
       $(".input-field>.material-icons").css("color", themeColor);
       $(".input-field>label").css("color",themeColor);
       $(".dropdown-content>li>a").css("color", themeColor);
+      $(".range-field>.thumb").css("background-color", themeColor)
 
-            var themeColor = '#ff9800';
+
+            var themeColor = '#ef6c00';
       $(".nav-wrapper").css("background-color", themeColor);
       $(".secondary-content>.material-icons").css("color", themeColor);
       $(".btn").css("background-color", themeColor);
@@ -51,7 +53,8 @@ if (typeof(Storage) !== "undefined") {
       $(".input-field>label").css("color", themeColor);
       $(".btn-floating").css("background-color", themeColor);
       $(".dropdown-content>li>a").css("color", themeColor);
-      
+      $(".range-field>.thumb").css("background-color", themeColor)
+
       // Update Theme Color
        if (typeof(Storage) !== "undefined") {
         // Store

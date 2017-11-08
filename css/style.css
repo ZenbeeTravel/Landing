@@ -101,9 +101,21 @@ span.caret {
 }
 
 .radio-toolbar input[type="radio"]:checked+label {
-  background-color: #ff9100;
+  background-color: #ef6c00;
   color: black;
 }
+
+/*====================================range================================*/
+  input[type=range]::-webkit-slider-thumb {
+    background-color: #ef6c00;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: #ef6c00;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: #ef6c00;
+  }
+
 
 /*==================================Star-choice==========================*/
 

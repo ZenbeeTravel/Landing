@@ -10,7 +10,7 @@ hr.hr-divider{
 .card-heading p {
   display: inline-block;
 }
-  
+
 .card-heading .icon-holder {
   display: inline-block;
   vertical-align: middle;
@@ -55,12 +55,12 @@ div#discover div.section div.pictogrammes div p {
 }
 
 span.caret {
-  color: white !important; 
+  color: white !important;
 }
 
 #main-container {
   height: 100vh;
-  background-image: url('../assets/camila-cordeiro.jpg'); 
+  background-image: url('../assets/camila-cordeiro.jpg');
   background-size: auto 100% ;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,7 +156,7 @@ span.caret {
 
 .rating > label:hover:before,  .rating > label:hover ~ label:before,  .rating:not(:hover) > :checked ~ label:before { opacity: 1; }
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 600px)
 {
 	.star-section {
 		margin-bottom: 0px;
@@ -185,7 +185,7 @@ span.caret {
     text-align: right;
 }
 
-@media only screen and (max-width : 992px) 
+@media only screen and (max-width : 992px)
 {
     .m-center-align
     {
@@ -203,7 +203,7 @@ span.caret {
     }
 }
 
-@media only screen and (max-width : 600px) 
+@media only screen and (max-width : 600px)
 {
     .s-center-align
     {
@@ -221,31 +221,6 @@ span.caret {
     }
 }
 
-
-
-/*===============================Section Destinations==========================*/
-div#destinations #destinations-title {
-  padding-bottom: 10px;
-	margin-bottom: 15px;
-}
-div#destinations .row/*
-div#destinations .row .card,
-div#destinations .row .card .card-image */{
-	margin-bottom: 0;
-	margin-top: 0;
-	
-}
-
-@media only screen and (min-width: 600px ) {
-
-  div#destinations .row .card-title {
-    font-size: 36px;
-  }
-}
-
-div#destinations .row .card-title {
-  text-shadow: 3px 3px 8px black;
-}
 
 
 /*===============================page success.html================================*/

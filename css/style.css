@@ -32,18 +32,23 @@ div#discover div.section div.pictogrammes div p {
 .baseline {
 	margin-top: 15vh;
   font-size: 3.5em;
-  text-shadow: 2px 2px 2px black;
 }
 
 @media only screen and (max-width: 600px) {
   .baseline {
-    font-size: 2em;
+    font-size: 34px;
   }
 }
 
 .under-baseline {
-  font-size: 20px;
-  text-shadow: 1px 1px 5px black;
+  font-size: 26px;
+  margin: 0.5em 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .under-baseline {
+    font-size: 22px;
+  }
 }
 
 #get-started{
@@ -72,12 +77,16 @@ span.caret {
   }
 }
 
-@media only screen and (min-width: 992px)
-{
+#main-logo {
+  max-width: 225px;
+}
+
+@media only screen and (max-width: 600px) {
   #main-logo {
-    max-width: 10vw;
+    max-width: 160px;
   }
 }
+
 
 /*===================================Radio==================================*/
 .radio-toolbar p{
